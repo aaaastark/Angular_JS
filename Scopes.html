@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../angular-1.8.2/angular.js"></script>
+    <script src="../angular-1.8.2/angular.min.js"></script>
+    <title>Scopes</title>
+</head>
+<body>
+    <div ng-app="mainApp" ng-controller="shapeController">
+        <p>{{message}} <br> {{type}} </p>
+        <div ng-controller="circleController">
+            <p>{{message}} <br> {{type}} </p>
+        </div>
+        <div ng-controller="squareController">
+            <p>{{message}} <br> {{type}} </p>
+        </div>
+    </div>
+    
+    <script>
+        var mainApp= angular.module("mainApp",[]);
+        mainApp.controller("shapeController",function($scope){
+            $scope.message = "In Shape Controller";
+            $scope.type = "Shape";
+        });
+        mainApp.controller("circleController",function($scope){
+            $scope.message = "In Circle Controller";
+            $scope.type = "Circle";
+        });
+        mainApp.controller("squareController",function($scope){
+            $scope.message = "In Square Controller";
+            $scope.type = "Square";
+        });
+        
+    </script>
+</body>
+</html>

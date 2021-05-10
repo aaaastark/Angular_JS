@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./angular-1.8.2/angular.js"></script>
+    <script src="./angular-1.8.2/angular.min.js"></script>
+    <title>HTML DOM</title>
+<body>
+    <div ng-app = "">
+        <table border="0">
+            <tr>
+                <td><input type="checkbox" ng-model = "enableDisableButten">Disable Butten</td>
+                <td><button ng-disabled = "enableDisableButten">Clik Now!</button></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" ng-model = "showNow1">Show Butten</td>
+                <td><button ng-show = "showNow1">Clik Now!</button></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" ng-model = "showNow2">Hide Butten</td>
+                <td><button ng-hide = "showNow2">Clik Now!</button></td>
+            </tr>
+            <tr>
+                <td><p>Total clik : {{clickCounter}}</p></td>
+                <td><button ng-click = "clickCounter = clickCounter + 1">Clik Now!</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+
+

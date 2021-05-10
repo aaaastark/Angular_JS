@@ -1,0 +1,22 @@
+[
+    {
+        "Name": "Muhammad Allah Rakha",
+        "RollNo": 101,
+        "Percentage": "90%" 
+    },
+    {
+        "Name": "Muhammad Allah Rakha Raza",
+        "RollNo": 102,
+        "Percentage": "94%" 
+    },
+    {
+        "Name": "Muhammad Allah Rakha Raza Naich",
+        "RollNo": 103,
+        "Percentage": "98%" 
+    },
+    {
+        "Name": "Muhammad Allah Rakha Raza Naich Don",
+        "RollNo": 104,
+        "Percentage": "100%" 
+    }
+]
